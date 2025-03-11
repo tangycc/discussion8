@@ -18,12 +18,14 @@
 <div class="radio">
         <label>Area of Submission:</label><br>
         <!-- How can the label and button line up and be easily navigatable? -->
-  <input type="radio" id="travel" name="interest" value="travel" required>
-  <label for="travel">Travel</label><br>
-  <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
-  <label for="recipe">Recipe</label><br>
-  <input type="radio" id="pets" name="interest" value="pets">
-  <label for="pets">Pets</label><br><br>
+        <div class="options">
+          <label for="travel">Travel</label><br>
+          <input type="radio" id="travel" name="interest" value="travel" required>
+          <label for="recipe">Recipe</label><br>
+          <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+          <label for="pets">Pets</label><br><br>
+          <input type="radio" id="pets" name="interest" value="pets">
+        </div>
 </div>
         <label for="message">Message:</label>
         <textarea id="message" name="message"></textarea><br><br>

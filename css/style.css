@@ -1,6 +1,12 @@
   /* Create an accessible color palette using var()function */
   /* https://www.w3schools.com/css/css3_variables.asp */
   
+  :root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --black: #000;
+  }
+
   form {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -10,15 +16,15 @@
     margin: 20px auto;
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    color: #702082;
-    background: #CFC096;
+    color: var(--black);
+    background: var(--white);
   }
 
   .radio {
     grid-column-start: 1;
     grid-column-end: 3;
     /* background: #575294; */
-    color: #702082;
+    color: var(--black);
   }
 
   #name {
@@ -26,8 +32,8 @@
     padding: 10px;
     font-size: 18px;
     font-weight: bold;
-    background: #CFC096;
-    color: #9B9A6D;
+    background: var(--black);
+    color: var(--white);
   }
 
   #message {
@@ -55,4 +61,11 @@
 
   input[type="submit"]:hover {
     background-color: #45a049;
+  }
+
+
+  .options {
+    display: flex;
+    gap: 10px;
+    align-items: center;
   }
